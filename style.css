@@ -1,3 +1,9 @@
+:root{
+    --cor_principal: #047BBC;
+    --cor_texto: #ffffff;
+    --cor_hover: #040368;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +11,20 @@
 }
 
 body{
-    background:  #047BBC;
+    background: var(--cor_principal);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
     display: flex;
+    background-color: var(--cor_principal);
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: space-around;
-    margin: 10px;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
 }
 
 .logo{
@@ -35,7 +46,7 @@ header{
 }
 
 .navegacao :hover{
-    color: black;
+    color: var(--cor_hover);
     font-weight: bold;
     cursor: pointer;
     position: static;
@@ -49,6 +60,30 @@ header{
 
 }
 
+.search{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+
+.search-icon{
+    display: flex;
+    width: 200%;
+    cursor: pointer;
+}
+
+.busca{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .user{
     color: white;
     display: flex;
@@ -59,7 +94,7 @@ header{
 }
 
 
-.texto{
-    display: flex;
-    border-color: black;
+.Banner-home{
+    width: 100%;
+    height: 100%;
 }
