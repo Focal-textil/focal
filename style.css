@@ -38,6 +38,7 @@ header{
     color: black;
     font-weight: bold;
     cursor: pointer;
+    position: static;
 }
 
 .nav{
@@ -59,7 +60,6 @@ header{
 
 
 .texto{
-    color: black;
-    top: 10vh;
     display: flex;
+    border-color: black;
 }
