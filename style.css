@@ -1,7 +1,7 @@
 :root{
-    --cor_principal: #047BBC;
+    --cor_principal: #050333;
     --cor_texto: #ffffff;
-    --cor_hover: #040368;
+    --cor_hover: #02d2f7;
 }
 
 *{
@@ -19,12 +19,11 @@ header{
     display: flex;
     background-color: var(--cor_principal);
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: space-around;
-    margin: 0px;
-    position: fixed;
+    justify-content: space-between;
+    padding: 2vh;
+    /* position: absolute; */
     width: 100%;
+    z-index: 1;
 }
 
 .logo{
@@ -38,42 +37,21 @@ header{
 
 }
 
-.navegacao{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 5vw;
-}
-
-.navegacao :hover{
-    color: var(--cor_hover);
-    font-weight: bold;
-    cursor: pointer;
-    position: static;
-}
-
-.nav{
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: space-between;
-
-}
 
 .search{
     display: flex;
     align-items: center;
     height: 20px;
+    width: 25vw;
     padding: 12px;
     border-radius: 6px;
     border: none;
     outline: none;
 }
 
-
 .search-icon{
     display: flex;
-    width: 200%;
+    width: 1.5vw;
     cursor: pointer;
 }
 
@@ -93,6 +71,37 @@ header{
     cursor: pointer;
 }
 
+section{
+    position: absolute;
+    top: 10vh;
+}
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 3vw;
+    gap: 5vw;
+    width: 100%;
+    font-weight: bold;
+    position: relative;
+}
+
+.navegacao :hover{
+    color: var(--cor_hover);
+    font-weight: bold;
+    cursor: pointer;
+    /* position: fixed; */
+}
+
+.nav{
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
 
 .Banner-home{
     width: 100%;
