@@ -1,7 +1,7 @@
 :root{
-    --cor_principal: #050333;
+    --cor_principal: #03071D;
     --cor_texto: #ffffff;
-    --cor_hover: #02d2f7;
+    --cor_hover: #07bedf;
 }
 
 *{
@@ -21,7 +21,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 2vh;
-    /* position: absolute; */
+    position: fixed;
     width: 100%;
     z-index: 1;
 }
@@ -41,7 +41,7 @@ header{
 .search{
     display: flex;
     align-items: center;
-    height: 20px;
+    height: 2vw;
     width: 25vw;
     padding: 12px;
     border-radius: 6px;
@@ -51,8 +51,10 @@ header{
 
 .search-icon{
     display: flex;
-    width: 1.5vw;
+    /* width: 3vw; */
     cursor: pointer;
+    background-color: red;
+    height: 2vw;
 }
 
 .busca{
@@ -79,10 +81,11 @@ section{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 3vw;
-    gap: 5vw;
+    padding: 3vw 7vw 2vw 7vw;
+    font-size: 4vh;
+    gap: 3vw;
     width: 100%;
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
 }
 
