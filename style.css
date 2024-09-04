@@ -12,6 +12,10 @@
     list-style: none;
 }
 
+body{
+    margin: 0;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -20,6 +24,10 @@ header{
     padding-top: 1vw;
     background-color: var(--cor_hover);
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 5vw;
 }
 
 .logo img{
@@ -29,11 +37,12 @@ header{
 .busca{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
+    align-items: center;
 }
 
 .busca img{
-    width: 21px;
+    width: 22px;
     cursor: pointer;
 }
 
@@ -56,14 +65,43 @@ header{
 
 .cadastro{
     display: flex;
-    width: 100%;
+    cursor: pointer;
+
 }
 
 .login{
     background-color: var(--cor_principal);
     padding: 3px;
-    width: 150px;
+    width: 105px;
     text-align: center;
     color: var(--cor_nav_bar);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-section{
+    display: flex;
+    position: absolute;
+    top: 5vw;
+    background-color: var(--cor_hover);
+    width: 100vw;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--cor_texto);
+    width: 99vw;
+    padding: 1vw 2vw;
+
+}
+
+.bannerhome{
+    max-width: 50vw;
+}
+
+
+.bannerhome img{
+    max-width: 90vw;
 }
